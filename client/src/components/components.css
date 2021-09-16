@@ -1,0 +1,79 @@
+/* Navbar */
+
+nav{
+    box-shadow: none !important;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+nav a{
+    color: black !important;
+}
+
+/* Profile Gallery */
+
+.gallery{
+    max-width: 70%;
+    position: relative !important;
+}
+
+.gallery-item{
+    padding: 0.7vw !important;
+    width: 23vw !important;
+    height: 22vw !important;
+}
+
+/* Home Post */
+
+.posts-container{
+    max-width: 50% !important;
+    margin: 0 auto !important;
+}
+
+.card{
+    box-shadow: none !important;
+    border: 1px solid #e2e2e2 !important;
+    margin-top: 24px !important;
+}
+
+.card-title{
+    display: inline-flex;
+    padding: 12px;
+}
+
+.card-title-img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    margin: 1vmin !important;
+    border-bottom: 1px solid #e2e2e2 !important;
+}
+
+.card-title p{
+    font-size: 1rem !important;
+    font-weight: bold;
+    font-stretch: expanded;
+    color: #6e6e6e;
+    line-height: 2rem;
+    margin: 1vmin !important;
+    margin-left: 2vmin !important;
+}
+
+.card-content{
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.card-content img{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.card-action{
+    padding: 12px !important;
+}
+
+.card-action p{
+    margin-top: 0 !important;
+}
