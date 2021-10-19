@@ -30,6 +30,7 @@ export default function Signup() {
                 bio: ''
             }
             console.log(data);
+            document.getElementById('submit-btn').innerHTML = 'Loading...'
             fetch('http://localhost:5000/signup', {
                 method: 'POST',
                 headers: {
@@ -47,12 +48,14 @@ export default function Signup() {
                     } else {
                         document.getElementById('signup-msg').style.color = 'red'
                         document.getElementById('signup-msg').innerHTML = data.message
+                        document.getElementById('submit-btn').innerHTML = 'Sign Up'
                     }
                 })
                 .catch(err => {
                     console.log(err);
                     document.getElementById('signup-msg').style.color = 'red'
                     document.getElementById('signup-msg').innerHTML = 'Something went wrong.';
+                    document.getElementById('submit-btn').innerHTML = 'Sign Up'
                 })
         }
     }, [history, firstName, lastName, email, password, username])

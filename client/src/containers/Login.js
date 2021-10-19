@@ -36,12 +36,14 @@ export default function Login() {
                     } else {
                         document.getElementById('login-msg').style.color = 'red'
                         document.getElementById('login-msg').innerHTML = data.message
+                        document.getElementById('login-submit').innerHTML = 'Log In'
                     }
                 })
                 .catch(err => {
                     console.log(err);
                     document.getElementById('login-msg').style.color = 'red'
                     document.getElementById('login-msg').innerHTML = 'Something went wrong.';
+                    document.getElementById('login-submit').innerHTML = 'Log In'
                 })
         }
     }, [history, password, username])
